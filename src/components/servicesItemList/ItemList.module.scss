@@ -1,0 +1,61 @@
+.content{
+
+    padding: 25px;
+    border: solid 2px rgb(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+    
+
+    &:hover{
+
+        transform: scale(1.15) rotate(360deg);
+        z-index: 4;
+       background-color: black;
+
+       .task{
+        .icon{
+            color: white;
+        }
+       }
+        
+
+    }
+
+
+    .task {
+
+        display: flex;
+        gap:5px;
+        align-items: center;
+
+        .icon{
+
+            width: 25px;
+            height: 25px;
+            color: black;
+
+        }
+
+        .taskName{
+
+            font-size: 18px;
+            color: rgb(204, 201, 201);
+            font-weight: bold;
+
+        }
+
+    }
+
+    .taskDescp{
+
+        font-size: 15px;
+        color: #ece2e2;
+        text-align: center;
+
+    }
+
+}

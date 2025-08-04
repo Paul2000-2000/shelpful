@@ -30,7 +30,7 @@ const Navbar = () => {
             :
 
             <div className={navbarStyles.content}>
-                <p className={navbarStyles.title}>shelpful</p>
+                <p className={navbarStyles.title}>Shelpful</p>
                 <div className={navbarStyles.list}>
                     <p className={navbarStyles.listitem}>Keep New Habits</p>
                     <p className={navbarStyles.listitem}>How it Works</p>
