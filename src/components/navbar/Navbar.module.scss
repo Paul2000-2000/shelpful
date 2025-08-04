@@ -1,0 +1,186 @@
+.content{
+
+    padding: 25px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .title{
+
+        font-weight: bold;
+        font-size: 22px;
+
+    }
+
+    .list{
+
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        
+        .listitem{
+
+            font-size: 16px;
+            color: #6D6D6D;
+            cursor: pointer;
+
+            &:hover{
+
+                color: rgb(126, 54, 54);
+
+            }
+        }
+
+        .memberoptions{
+
+            width: 200px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border: none;
+
+            &:hover{
+
+                background-color: rgb(126, 54, 54);
+
+            }
+
+        }
+    
+    }
+
+    .responsive{
+        
+        display: none;
+
+    }
+
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .content{
+
+        padding: 15px 50px;
+
+        .list{
+            gap: 20px;
+        }
+
+    }
+    
+}
+
+
+@media screen and (max-width:940px){
+
+        .content{
+
+            .list{
+
+                display: none;
+
+            }
+
+            .responsive{
+
+                display: inline;
+
+                .icon{
+
+                    width: 30px;
+                    height: 30px;
+
+                }
+
+               
+
+            }
+
+        }
+        .responsivelist{
+
+            
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            background-color: rgb(126, 54, 54);
+
+            .icon{
+
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                right: 50px;
+                top: 15px;
+                color: white;
+                cursor: pointer;
+
+            }
+        
+
+            .listitem {
+                font-size: 18px;
+                color: #ffffff;
+                cursor: pointer;
+
+                &:hover{
+
+                    color: black;
+
+                }
+              }
+        
+              .memberoptions{
+
+                width: 200px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                border: none;
+    
+                &:hover{
+    
+                    background-color: white;
+                    color: black;
+    
+                }
+    
+            }
+
+        }
+
+}
+
+@media screen and (max-width:620px){
+
+    .content{
+
+        padding: 15px;
+
+    }
+
+    .responsivelist{
+
+        .icon{
+
+            right: 15px;
+
+        }
+    }
+}
