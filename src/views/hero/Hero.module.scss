@@ -1,0 +1,205 @@
+.content{
+
+    padding: 25px 100px;
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    align-items: center;
+
+    .contentLeft{
+
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: 25px;
+
+        .title{
+
+            font-size: 55px;
+            width: 80%;
+
+        }
+
+        .description{
+
+            font-size: 16px;
+            color: #302f2f;
+
+        }
+
+        .start{
+
+            width: 200px;
+            height: 40px;
+            background-color: black;
+            border: none;
+            color: white;
+            cursor: pointer;
+
+            transition: transform 0.3s ease-in-out;
+
+            &:hover{
+
+                background-color: rgb(126, 54, 54);
+                transform: scale(1.15);
+
+            }
+
+        }
+
+        .trial{
+
+            font-size: 14px;
+            color: #6D6D6D;
+
+        }
+
+    }
+
+    .image{
+
+        width: 625px;
+        height: 625px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100px); 
+        animation: slideIn 2s ease-out forwards;
+
+            &:hover{
+
+                
+                transform: translateX(100px) ; 
+
+            }
+
+    }
+
+}
+
+
+@media screen and (max-width:1300px){
+
+    .content{
+
+        .image{
+
+            width: 500px;
+            height: 500px;
+
+        }
+
+    }
+}
+
+
+@media screen and (max-width:1200px){
+
+    .content{
+
+        padding: 15px 50px;
+
+    }
+}
+
+
+@media screen and (max-width:1100px){
+
+    .content{
+        
+
+        .contentLeft{
+
+            .title{
+
+                width: 100%;
+                font-size: 44px;
+
+            }
+        }
+
+        .image{
+
+            width: 400px;
+            height: 400px;
+
+        }
+
+    }
+}
+
+
+@media screen and (max-width:768px){
+
+    .content{
+        
+        display: flex;
+        flex-direction: column;
+
+        .contentLeft{
+
+           align-items: center;
+
+           .title{
+
+                text-align: center;
+
+           }
+
+           .description{
+
+            text-align: center;
+
+             }
+
+        }
+
+        .image{
+
+            width: 400px;
+            height: 400px;
+
+        }
+
+    }
+}
+
+@media screen and (max-width:490px){
+
+    .content{
+
+        .contentLeft{
+
+            .title{
+
+                font-size: 27px;
+
+            }
+
+            .description{
+
+                font-size: 15px;
+            }
+
+        }
+
+        .image{
+
+            width: 300px;
+            height: 300px;
+
+        }
+
+    }
+
+}
+
+
+
+@keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

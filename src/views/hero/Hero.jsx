@@ -18,11 +18,11 @@ const hero = () => {
             <button className={heroStyles.start}>
                  Start 3 days Trial
             </button>
-            <p>
+            <p className={heroStyles.trial}>
                 30-day money back guarantee
             </p>
         </div>
-        <img src={HeroImage} className={heroStyles.image}/>
+        <img src={HeroImage} className={heroStyles.image} loading='lazy'/>
         
     </div>
   )

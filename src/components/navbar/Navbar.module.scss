@@ -10,6 +10,14 @@
 
         font-weight: bold;
         font-size: 22px;
+        transition: transform 0.5s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+
+            transform: scale(1.15) rotate(-20deg);
+
+        }
 
     }
 
@@ -24,10 +32,12 @@
             font-size: 16px;
             color: #6D6D6D;
             cursor: pointer;
+            
 
             &:hover{
 
                 color: rgb(126, 54, 54);
+                
 
             }
         }
@@ -43,10 +53,12 @@
             color: white;
             cursor: pointer;
             border: none;
+            transition: transform 0.3s ease-in-out;
 
             &:hover{
 
                 background-color: rgb(126, 54, 54);
+                transform: scale(1.15);
 
             }
 

@@ -1,0 +1,98 @@
+.content{
+
+    background-color: black;
+    height: 40vh;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .access{
+
+        font-size: 26px;
+        color: white;
+
+    }
+    
+    .title{
+
+        font-size: 48px;
+        color: white;
+        font-weight: bold;
+
+    }
+
+    .register{
+
+        width: 250px;
+        height: 50px;
+        border: none;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+
+
+        transition: transform 0.3s ease-in-out;
+
+        &:hover{
+
+            background-color: rgb(126, 54, 54);
+            transform: scale(1.15);
+            color: white;
+
+        }
+
+    }
+}
+
+
+@media screen and (max-width:940px){
+
+    .content{
+
+        height: 50vh;
+
+        .access{
+
+            font-size: 22px;
+            text-align: center;
+
+        }
+
+        .title{
+
+            font-size: 36px;
+            text-align: center;
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width:490px){
+
+    .content{
+
+        .access{
+
+            width: 80%;
+
+        }
+
+        .title{
+
+            width: 80%;
+
+        }
+
+        .register{
+
+            width: 200px;
+        }
+
+    }
+
+}
