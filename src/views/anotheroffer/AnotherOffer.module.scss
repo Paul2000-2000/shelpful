@@ -7,22 +7,23 @@
     align-items: center;
     justify-content: space-evenly;
 
-    .access{
-
-        font-size: 26px;
-        color: white;
-
-    }
-    
     .title{
 
-        font-size: 48px;
+        font-size: 36px;
         color: white;
         font-weight: bold;
 
     }
+    
+    .message{
 
-    .register{
+        font-size: 28px;
+        color: #6D6D6D;
+        
+
+    }
+
+    .action{
 
         width: 250px;
         height: 50px;
@@ -48,6 +49,20 @@
 }
 
 
+@media screen and (max-width:1320px){
+
+    .content{
+
+        .title{
+            
+            text-align: center;
+            width: 90%;
+
+        }
+
+    }
+
+}
 
 
 @media screen and (max-width:940px){
@@ -56,17 +71,19 @@
 
         height: 50vh;
 
-        .access{
+        .title{
 
-            font-size: 22px;
+            font-size: 26px;
             text-align: center;
+            width: 85%;
 
         }
 
-        .title{
+        .message{
 
-            font-size: 36px;
+            font-size: 22px;
             text-align: center;
+            width: 85%;
 
         }
 
@@ -78,19 +95,19 @@
 
     .content{
 
-        .access{
-
-            width: 80%;
-
-        }
-
         .title{
 
             width: 80%;
 
         }
 
-        .register{
+        .message{
+
+            width: 80%;
+
+        }
+
+        .action{
 
             width: 200px;
         }
