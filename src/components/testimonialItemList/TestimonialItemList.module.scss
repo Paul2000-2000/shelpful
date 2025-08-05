@@ -1,0 +1,116 @@
+.content{
+
+    padding: 15px;
+    border: solid 2px rgb(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+    
+
+    &:hover{
+
+    transform: scale(1.15) rotate(360deg);
+    z-index: 4;
+    background-color: black;
+    .person{
+        .personData{
+            .name{
+                color: white;
+            }
+        }
+    }
+
+    
+    }
+
+    .person{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .image{
+
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+
+        }
+
+        .personData{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:5px;
+
+            .name{
+
+                font-size: 26px;
+                font-weight: bold;
+                        
+            }
+
+            .mail{
+
+                font-size: 16px;
+                color: #6D6D6D;
+
+            }
+
+        }
+
+        .personStatus{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:5px;
+
+            .icon{
+
+                color: red;
+                width: 25px;
+                height: 25px;
+
+            }
+
+            .time{
+
+                font-size: 16px;
+                color: #6D6D6D;
+
+            }
+
+        }
+
+    }
+
+
+   .stars{
+
+    display: flex;
+    gap:5px;
+
+    .icon{
+
+        color: yellow;
+        width: 25px;
+        height: 25px;
+
+    }
+
+   }
+
+    .message{
+
+        font-size: 18px;
+        color: #ece2e2;
+        text-align: center;
+
+    }
+
+}

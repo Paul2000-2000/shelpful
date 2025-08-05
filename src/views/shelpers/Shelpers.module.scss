@@ -1,0 +1,135 @@
+.content{
+
+    height: 70vh; 
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    
+
+    .image{
+
+        width: 100%;
+        height: 100% ;
+        object-fit: cover; 
+       
+       
+
+    }
+
+    .about{
+
+
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        
+        
+
+        .title{
+
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        .description{
+
+            font-size: 22px;
+            color: #0e0d0d;
+
+        }
+
+        .action{
+
+            width: 200px;
+            height: 40px;
+            background-color: black;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+
+            transition: transform 0.3s ease-in-out;
+
+            &:hover{
+
+                background-color: rgb(126, 54, 54);
+                transform: scale(1.15);
+                color: white;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:1300px){
+
+    .content{
+
+        height: 65vh;
+        
+
+        .image{
+
+            height: 100%;
+
+        }
+
+        .about{
+
+            padding: 25px;
+            height: 100%;
+
+            .title{
+
+                font-size: 29px;
+
+            }
+
+            .description{
+
+                font-size: 19px;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+
+    .content{
+
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+       
+        .about{
+
+            gap:15px;
+            align-items: center;
+
+            .description{
+
+                text-align: center;
+
+            }
+
+        }
+
+    }
+
+}

@@ -74,6 +74,7 @@
     
                     background-color: rgb(126, 54, 54);
                     transform: scale(1.15);
+                    color: white;
     
                 }
 
@@ -136,20 +137,26 @@
 
         .title{
 
-            font-size: 32px;
+            font-size: 28px;
 
         }
 
         .allContent{
 
             flex-direction: column;
-            gap:45px;
+            gap:65px;
 
             .allContentLeft , .allContentRight{
 
                 .image{
 
                     height: auto;
+
+                }
+
+                .description{
+
+                    width: 90%;
 
                 }
 
